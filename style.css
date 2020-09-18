@@ -1,0 +1,136 @@
+body {
+    background-color: rgb(231, 202, 202);
+    margin: 0;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+h1{
+    text-align:center;
+}
+/* NAVIGATION */
+
+
+
+nav {
+    display: inline;
+    height:50px;
+    margin: -15px -15px 0 -15px;
+    background-color: rgb(233, 19, 19);
+    width:100%;
+}
+
+#space{
+    padding-top: 1%;
+}
+
+nav ul { 
+    list-style: none;
+    background-color: rgb(128, 20, 20);
+    margin: 0;
+    padding: 0;
+}  
+
+nav li{
+    display: inline-block;
+}
+
+nav a {
+    margin: 0 -3px;
+    display: inline-block;
+    padding: 15px;
+    text-decoration-line: none;
+}
+
+nav a:link, nav a:visited {
+    color: white;
+}
+
+nav a:hover, nav #activePage {
+    color: black;
+    background-color: white;
+}
+
+nav a:active {
+    background-color: gray;
+}
+
+#img1 {
+   padding-top: 10px;
+   padding-bottom: 10px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+}
+
+
+/* END OF NAVIGATION */
+
+
+/* LISTS */
+main {
+    margin-top: 50px;
+}
+
+main ol {
+    list-style-type: lower-roman;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main caption {
+    padding-top: 10px;
+    caption-side: bottom;
+}
+
+main .myTable th {
+    background-color: white;
+    text-align: left;
+}
+
+.darkKnight {
+    background-color: black;
+    color: white;
+}
+
+/* DISPLAY NONE VS VISIBILITY HIDDEN */
+.hidden {
+    /* display: none; */
+    visibility: hidden;
+}
+
+/* CENTERING */
+.centered {
+    border: tomato 1px solid;
+    width: 75%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+form {
+    width: 85%;
+    margin: 0 auto;
+}
+form div {
+    margin-bottom: 5px;
+}
+
+form .label-width {
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+    vertical-align: top;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea,
+form select {
+    width: 40%;
+}
+

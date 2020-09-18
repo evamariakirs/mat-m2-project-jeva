@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./home.html" id="aboutus">About Us</a>
+                </li>
+                <li>
+                    <a href="./artisticconcept.html" id="aboutus">Artistic Concept</a>
+                </li>
+                <li>
+                    <a href="./contacts.html" id="aboutus">Contact Form</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <p>
+            You can leave your contacts in the form below to find out about our upcoming events</p>
+        </p>
+        <form action="#">
+            <div>
+                <label for="title">Your Title:</label>
+        <select name="titleName" id="title">
+            <option>Please select your title</option>
+            <option>-------------------</option>
+            <option value="mr">Mr.</option>
+            <option value="mrs">Mrs.</option>
+            <option value="miss">Miss</option>
+            <option value="ms">Ms.</option>
+        </select>
+        <div>
+            <label class="label-width" for="fName">First name: *</label>
+            <input
+              type="text"
+              name="firstName"
+              id="fName"
+              required
+              placeholder="Enter your first name"
+            />
+          </div>
+          <div>
+            <label class="label-width" for="lName">Last name: *</label>
+            <input
+              type="text"
+              name="lastName"
+              id="lName"
+              required
+              placeholder="Enter your last name"
+            />
+          </div>
+          <div>
+            <label class="label-width" for="e-mail">E-mail: *</label>
+            <input
+              type="email"
+              name="eMail"
+              id="e-mail"
+              required
+              placeholder="Enter your e-mail"
+            />
+          </div>
+          <div>
+            <label class="label-width" for="pw">Enter Password: *</label>
+            <input
+              type="password"
+              name="passWord"
+              id="pw"
+              required
+              placeholder="Enter password"
+              minlength="7"
+              maxlength="12"
+            />
+          </div>
+          <div>
+            <label class="label-width" for="pwc">Confirm Password: *</label>
+            <input
+              type="password"
+              name="passWordConfirm"
+              id="pwc"
+              required
+              placeholder="Confirm password"
+              minlength="7"
+              maxlength="12"
+            />
+          </div>
+          <div>
+            <span class="label-width">Select your Gender: </span>
+            <input type="radio" name="gender" id="male" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female" />
+            <label for="female">Female</label>
+          </div>
+          <div>
+            <label class="label-width" for="how-did-you-hear">How did you find out about the Russian theater?</label>
+            <textarea
+              name="aboutUs"
+              id="how-did-you-find"
+              cols="22"
+              rows="5"
+              maxlength="500"
+            ></textarea>
+          </div>
+          <div class="checkboxDiv">
+            <input type="checkbox" name="terms" id="accept-terms" required />
+            <label for="accept-terms"
+              >Accept our <a href="#">terms and conditions</a> *</label
+            >
+          </div>
+          <div class="checkboxDiv">
+            <input type="checkbox" name="mailList" id="mailing-list" checked />
+            <label for="mailing-list">Subscribe to our newsletter</label>
+          </div>
+          <div class="checkboxDiv"><input type="submit" value="Register" /></div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
